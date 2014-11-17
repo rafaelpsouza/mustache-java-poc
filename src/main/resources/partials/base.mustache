@@ -1,0 +1,9 @@
+{{! http://mustache.github.io/mustache.5.html}}
+{{> header}} 
+{{#menus}}
+    Title: {{title}}
+    {{#links}}
+        {{> part}}       
+    {{/links}}
+{{/menus}}
+{{> footer}} 

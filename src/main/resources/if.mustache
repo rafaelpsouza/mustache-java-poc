@@ -1,0 +1,24 @@
+{{! http://mustache.github.io/mustache.5.html}}
+{{#menus}}
+    {{#visible}}
+        Title: {{title}}
+            {{#links}}
+                Description: {{description}}
+                URL: {{url}}        
+            {{/links}}
+    {{/visible}}
+{{/menus}}
+
+{{! IF - ELSE }}
+{{#menus}}
+    {{#visible}}
+        Title: {{title}}
+            {{#links}}
+                Description: {{description}}
+                URL: {{url}}        
+            {{/links}}
+    {{/visible}}
+    {{^visible}}
+        Invisible!
+    {{/visible}}
+{{/menus}}
